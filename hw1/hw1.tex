@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\textbf{Question 5.2}
+\bigskip
+
+What is the present value of a security that will pay \$29,000 in 20 years if securities of equal risk pay 5\% annually?
+
+\bigskip
+\textbf{Answer}
+
+\[
+  29000 = PV(1.05)^{20}
+\]
+\[
+  \Rightarrow \boxed {PV \approx 10929.795}
+\]
+
+\bigskip
+\bigskip
+\textbf{Question 5.5}
+\bigskip
+
+You have \$33,556.25 in a brokerage account, and to deposit an additional \$50,000 at the end of every future year until your account totals \$220,000.
+You expect to earn 12\% annually on the account. How many years will it take to reach your goal?
+
+\bigskip
+\textbf{Answer}
+
+\[
+  220000 = 33556.25(1.12)^n + 50000[\frac{1.12^n - 1}{0.12}]
+\]
+
+Let $x=1.12^n$:
+
+\[
+  33556.25x+416666.67(x - 1)=220000
+\]
+\[
+  \Rightarrow 450222.92x=636666.67
+\]
+\[
+  x=1.4142
+\]
+\[
+  \because 1.4142 = 1.12^n \therefore n = \frac{\ln(1.4142)}{\ln(1.12)}
+\]
+\[
+  \boxed{n \approx 3.06 \ years}
+\]
+
+\bigskip
+\bigskip
+\textbf{Question 5.7}
+\bigskip
+
+An investment will pay \$150 at the end of each of the next 3 years, \$250 at the end of year 4, \$300 at the end of year 5, and \$600 at the end of year 6. 
+If other investments of equal risk earn 11\% annually, what is its present value and its future value?
+
+\bigskip
+\textbf{Answer}
+
+\[
+  PV = \frac {150}{1.11} + \frac {150}{1.11^2} + \frac {150}{1.11^3} + \frac {250}{1.11^4} + \frac {300}{1.11^5} + \frac {600}{1.11^6}
+\]
+
+\[
+  \boxed{PV \approx \$1926.64}
+\]
+
+\bigskip
+\bigskip
+\textbf{Question 5.23}
+\bigskip
+
+Find the amount to which \$500 will grow under each of these conditions:
+
+\begin{enumerate}
+  \item[a.] 12\% compounded annually for 5 years
+  \item[b.] 12\% compounded semiannually for 5 years
+  \item[c.] 12\% compounded quarterly for 5 years
+  \item[d.] 12\% compounded monthly for 5 years
+  \item[e.] 12\% compounded daily for 5 years
+  \item[f.] Why does the observed pattern of FVs occur? 
+\end{enumerate}
+
+\bigskip
+\textbf{Answer}
+
+\begin{enumerate}
+  \item[a.] $500(1.12)^5 \approx 881.17$
+  \item[b.] $5000(1 + \frac {0.12}{2})^{5(2)} \approx 895.42$ 
+  \item[c.] $5000(1 + \frac {0.12}{4})^{5(4)} \approx 903.06$ 
+  \item[d.] $5000(1 + \frac {0.12}{12})^{5(12)} \approx 908.35$ 
+  \item[e.] $5000(1 + \frac {0.12}{365})^{5(365)} \approx 911.00$ 
+  \item[f.] Shorter payment periods result in more frequent compounding, thus increasing total value. 
+\end{enumerate}
+
+\end{document}
